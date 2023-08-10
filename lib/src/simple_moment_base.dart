@@ -182,7 +182,7 @@ class Moment {
       timeString = locale.seconds.replaceFirst('%i', '${diff.inSeconds.abs()}');
     else if (diff.inMinutes.abs() < 2)
       timeString = locale.aMinute.replaceFirst('%i', '${diff.inMinutes.abs()}');
-    else if (diff.inMinutes.abs() < 45)
+    else if (diff.inMinutes.abs() < 59)
       timeString = locale.minutes.replaceFirst('%i', '${diff.inMinutes.abs()}');
     else if (diff.inHours.abs() < 2)
       timeString = locale.anHour.replaceFirst('%i', '${diff.inHours.abs()}');
